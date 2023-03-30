@@ -8,7 +8,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: DAG image creation and airflow deployment
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: ${{ secrets.PROD_RELEASE_NAME }}/airflow:deploy-ci-${{ github.run_number }}
           username: _
